@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderView" id="iN0-l3-epB" customClass="HeaderView" customModule="CodeSquad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Co1-jt-lGr">
+                    <rect key="frame" x="12" y="7.5" width="65" height="15"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d18-lK-984">
+                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.71372549019999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="MaF-fc-npp"/>
+                                <constraint firstAttribute="width" secondItem="d18-lK-984" secondAttribute="height" multiplier="1:1" id="tix-kJ-NEP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5V-Pa-FmG">
+                            <rect key="frame" x="25" y="0.0" width="15" height="15"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Z5V-Pa-FmG" secondAttribute="height" multiplier="1:1" id="8Wk-CN-G3q"/>
+                                <constraint firstAttribute="width" constant="15" id="BRE-6a-f0u"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crP-ah-jiZ">
+                            <rect key="frame" x="50" y="0.0" width="15" height="15"/>
+                            <color key="backgroundColor" red="0.39860026040000002" green="1" blue="0.14214409722222221" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="crP-ah-jiZ" secondAttribute="height" multiplier="1:1" id="TvW-1R-3MF"/>
+                                <constraint firstAttribute="width" constant="15" id="uam-t6-wMJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Z5V-Pa-FmG" firstAttribute="width" secondItem="Z5V-Pa-FmG" secondAttribute="height" multiplier="1:1" id="YYb-T2-f9u"/>
+                        <constraint firstItem="crP-ah-jiZ" firstAttribute="width" secondItem="crP-ah-jiZ" secondAttribute="height" multiplier="1:1" id="bWA-sg-YZx"/>
+                        <constraint firstItem="crP-ah-jiZ" firstAttribute="width" secondItem="crP-ah-jiZ" secondAttribute="height" multiplier="1:1" id="tdR-15-cUU"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Co1-jt-lGr" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="MSV-0j-up8"/>
+                <constraint firstItem="Co1-jt-lGr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="hdd-e2-xHA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="greenView" destination="crP-ah-jiZ" id="ovg-W5-hYC"/>
+                <outlet property="redView" destination="d18-lK-984" id="vxb-ft-cAT"/>
+                <outlet property="yellowView" destination="Z5V-Pa-FmG" id="lOK-em-K3D"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="-21"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,32 @@
+PODS:
+  - ActionSheetPicker (1.6.2)
+  - Alamofire (4.7.2)
+  - Highlightr (2.0.1)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker
+  - Alamofire
+  - Highlightr
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ActionSheetPicker
+    - Alamofire
+    - Highlightr
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ActionSheetPicker: cc5255a36aabaf34245b97a478059d26bac8cd84
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Highlightr: 65655134dd0d5e1320afdd8a9d880c9e9dc0b437
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: b564427b295d12d575e8bd3f18e9324154a8da68
+
+COCOAPODS: 1.5.0
